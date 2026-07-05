@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Room Finalização de Compra</title>
+    <link href="https://db.onlinewebfonts.com/c/d6caee2009b000828a42bdf0e386d1f0?family=Elektrix-Bold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="checkout-page">
+    <header class="menu_principal">
+        <span class="CD-Room_title"><a href="index.html" class="CD-Room_title-botao">CD-Room</a></span>
+        <button type="button" id="btn-tema" class="btn-theme" aria-label="Alternar tema" aria-pressed="false">
+            <span class="theme-icon">
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4.5a1 1 0 0 1 1 1V7a1 1 0 1 1-2 0V5.5a1 1 0 0 1 1-1Zm0 12a1 1 0 0 1 1 1V19a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1Zm7.5-5a1 1 0 0 1 1 1 1 1 0 0 1-1 1H19a1 1 0 1 1 0-2h.5Zm-15 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1H5a1 1 0 1 1 0-2h.5ZM7.1 7.1a1 1 0 0 1 1.4 0l1.1 1.1a1 1 0 0 1-1.4 1.4L7.1 8.5a1 1 0 0 1 0-1.4Zm8.4 8.4a1 1 0 0 1 1.4 0l1.1 1.1a1 1 0 0 1-1.4 1.4l-1.1-1.1a1 1 0 0 1 0-1.4ZM7.1 16.9a1 1 0 0 1 0-1.4l1.1-1.1a1 1 0 1 1 1.4 1.4l-1.1 1.1a1 1 0 0 1-1.4 0Zm8.4-8.4a1 1 0 0 1 0-1.4l1.1-1.1a1 1 0 1 1 1.4 1.4l-1.1 1.1a1 1 0 0 1-1.4 0ZM12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z"/>
+                </svg>
+            </span>
+        </button>
+    </header>
+
+    <main class="checkout-main">
+        <section class="checkout-card">
+            <h1>Finalização de compra</h1>
+            <p>Preencha os dados abaixo para concluir seu pedido.</p>
+
+            <form class="checkout-form">
+                <label>
+                    Nome completo
+                    <input type="text" placeholder="Seu nome" required>
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" placeholder="seu@email.com" required>
+                </label>
+
+                <label>
+                    Endereço
+                    <input type="text" placeholder="Rua, número, bairro" required>
+                </label>
+
+                <label>
+                    Forma de pagamento
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option>Cartão de crédito</option>
+                        <option>Boleto</option>
+                        <option>Pix</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn-finalizar">Confirmar pedido</button>
+            </form>
+
+            <a href="index.html" class="checkout-link">Voltar ao catálogo</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
