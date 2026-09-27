@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CD-Room: uma curadoria de CDs para ouvir, colecionar e redescobrir.">
+    <title>CD-Room | Música para levar</title>
+    <link href="https://db.onlinewebfonts.com/c/d6caee2009b000828a42bdf0e386d1f0?family=Elektrix-Bold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header class="landing-header">
+        <a href="landing.html" class="brand" aria-label="CD-Room início">CD-Room</a>
+        <nav class="landing-nav" aria-label="Navegação principal">
+            <a href="#artistas">Artistas</a>
+            <a href="#manifesto">Manifesto</a>
+            <a href="index.html" class="nav-catalog">Abrir catálogo</a>
+            <button type="button" id="btn-tema" class="theme-button" aria-label="Alternar tema" aria-pressed="false">
+                <span class="theme-sun" aria-hidden="true">☼</span>
+                <span class="theme-moon" aria-hidden="true">◐</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Coleção física para quem sente a música</p>
+                <h1 id="hero-title">A música<br><em>em mãos</em></h1>
+                <p class="hero-intro">CDs que atravessam épocas, capas que viram memória e uma curadoria feita para você encontrar o próximo disco favorito.</p>
+                <div class="hero-actions">
+                    <a href="index.html" class="primary-button">Explorar catálogo <span aria-hidden="true">↗</span></a>
+                    <a href="#artistas" class="text-link">Conhecer as bandas <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <div class="hero-art reveal reveal-delay" role="button" tabindex="0" aria-label="Avançar capa do carrossel">
+                <img id="hero-cover" src="IMGs/lafamila013.jpeg" alt="Capa do CD La Familia 013">
+                <div class="hero-caption"><span id="hero-cover-number">01 / 19</span><span>lado A / lado B</span></div>
+            </div>
+            
+        </section>
+
+        <section id="artistas" class="artists-section" aria-labelledby="artists-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Mundos para explorar</p>
+                <h2 id="artists-title">Escolha seu<br><em>lado A.</em></h2>
+            </div>
+            <div class="artist-grid">
+                <a class="artist-card artist-cbjr reveal" href="index.html#secao-CBJR">
+                    <img src="IMGs/CBJRlogo.jpeg" alt="Charlie Brown Jr.">
+                    <span class="artist-meta">01 / Charlie Brown Jr.</span>
+                    <strong>Charlie Brown Jr.</strong>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="artist-card artist-raimundos reveal reveal-delay" href="index.html#secao-Raimundos">
+                    <img src="IMGs/Raimundoslogo.png" alt="Raimundos">
+                    <span class="artist-meta">02 / Raimundos</span>
+                    <strong>Raimundos</strong>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="artist-card artist-rodox reveal reveal-delay-2" href="index.html#secao-Rodox">
+                    <img src="IMGs/Rodoxlogo.jpg" alt="Rodox">
+                    <span class="artist-meta">03 / Rodox</span>
+                    <strong>Rodox</strong>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="manifesto" class="manifesto-section" aria-labelledby="manifesto-title">
+            <div class="manifesto-mark" aria-hidden="true">CR</div>
+            <div class="manifesto-copy reveal">
+                <p class="eyebrow">Por que CD-Room?</p>
+                <h2 id="manifesto-title">Aperte play<br>no que <em>fica.</em></h2>
+                <p>Entre o streaming e a lembrança existe um objeto. Uma capa, um encarte, aquele risco quase invisível. A CD-Room existe para manter essa relação viva: escolher sem pressa e ouvir por inteiro.</p>
+                <a href="index.html" class="outline-button">Ver todos os discos <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="manifesto-stat reveal reveal-delay">
+                <strong>03</strong>
+                <span>universos<br>para descobrir<br>(e vem mais)</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="landing-footer">
+        <span>CD-Room / Música para levar</span>
+        <span>Feito para ouvir alto.</span>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>

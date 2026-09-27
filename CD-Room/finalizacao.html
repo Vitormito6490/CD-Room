@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Room Finalização de Compra</title>
+    <link href="https://db.onlinewebfonts.com/c/d6caee2009b000828a42bdf0e386d1f0?family=Elektrix-Bold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="checkout-page">
+    <header class="menu_principal">
+        <span class="CD-Room_title"><a href="index.html" class="CD-Room_title-botao">CD-Room</a></span>
+        <a href="index.html" class="btn-home" aria-label="Ir para a página inicial">Home</a>
+        <button type="button" id="btn-tema" class="btn-theme" aria-label="Alternar tema" aria-pressed="false">
+            <span class="theme-icon">
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 14.7A8.7 8.7 0 0 1 9.3 4a7.4 7.4 0 1 0 10.7 10.7Z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4.7"/>
+                    <path d="M12 2.5v2.2M12 19.3v2.2M4.5 12H2.3M21.7 12h-2.2M6.7 6.7l-1.6-1.6M18.9 18.9l-1.6-1.6M6.7 17.3l-1.6 1.6M18.9 5.1l-1.6 1.6"/>
+                </svg>
+            </span>
+        </button>
+    </header>
+
+    <main class="checkout-main">
+        <section class="checkout-card">
+            <h1>Finalização de compra</h1>
+            <p>Preencha os dados abaixo para concluir seu pedido.</p>
+
+            <form class="checkout-form">
+                <label>
+                    Nome completo
+                    <input type="text" placeholder="Seu nome" required>
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" placeholder="seu@email.com" required>
+                </label>
+
+                <label>
+                    Endereço
+                    <input type="text" placeholder="Rua, número, bairro" required>
+                </label>
+
+                <label>
+                    Forma de pagamento
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option>Cartão de crédito</option>
+                        <option>Boleto</option>
+                        <option>Pix</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn-finalizar">Confirmar pedido</button>
+            </form>
+
+            <a href="index.html" class="checkout-link">Voltar ao catálogo</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
